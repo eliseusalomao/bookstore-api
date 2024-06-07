@@ -6,4 +6,3 @@ spring.datasource.password=password
 spring.jpa.hibernate.ddl-auto=update
 
 spring.jpa.properties.hibernate.jdbc.lab.non_contextual_creation=true
-spring.jpa.show-sql=true
