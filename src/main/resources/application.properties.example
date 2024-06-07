@@ -1,0 +1,9 @@
+spring.application.name=project-name
+
+spring.datasource.url=jdbc:postgresql://localhost:port/database
+spring.datasource.username=user
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.properties.hibernate.jdbc.lab.non_contextual_creation=true
+spring.jpa.show-sql=true
