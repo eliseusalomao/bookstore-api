@@ -13,20 +13,20 @@ My focus was to reinforce:
 
 ## How to run this project
 
-1. Setup database</br>
-   Run `docker compose up -d`
+1. Setup Docker</br>
+   Run `docker compose up -d` on project directory.
+   
 3. Run the Spring Boot Application
-4. Populate database</br>
-   To have a better experience you also may need to insert some elements into the database:
-   You may use the database client of your preference and run the following script:
-   ```
+   
+5. Populate database</br>
+```
    insert into publishers values(gen_random_uuid(), 'Alta Books');
    insert into publishers values(gen_random_uuid(), 'Pearson');
 
    insert into authors values(gen_random_uuid(), 'Eric Evans');
    insert into authors values(gen_random_uuid(), 'Paul Deitel');
    insert into authors values(gen_random_uuid(), 'Harvey Deitel');
-   ```
+```
 
 ## API *Endpoints*
 **POST BOOK**
@@ -54,3 +54,7 @@ My focus was to reinforce:
 ```bash
    DELETE /bookstore/books/5c6769be-dbd7-4f08-aa4b-707d47534fd7
 ```
+
+## Database
+
+This project uses a PostgreSQL database; you can use the database client of your choice.
