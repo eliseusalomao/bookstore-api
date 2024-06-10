@@ -28,4 +28,29 @@ My focus was to reinforce:
    insert into authors values(gen_random_uuid(), 'Harvey Deitel');
    ```
 
-The ***endpoint*** for managing books is: http://localhost:8080/bookstore/books 
+## API *Endpoints*
+**POST BOOK**
+
+```bash
+   POST /bookstore/books
+```
+```bash
+   {
+   	"title": "Java: Como programar",
+   	"publisherId": "79e1f32b-f6ab-43bc-b894-3d657d4e2491",
+   	"authorIds": ["59fe8dd4-eab3-41f2-9d21-46682c84503b", "9f9e5d8f-0333-4598-8fcd-9b1160f05c2a"],
+   	"reviewComment": "Adorei ler este livro, pois é um grande compilado de ensinamentos!"
+   }
+```
+
+**GET BOOK**
+
+```bash
+    GET /bookstore/books
+```
+
+**DELETE BOOK**
+
+```bash
+   DELETE /bookstore/books/5c6769be-dbd7-4f08-aa4b-707d47534fd7
+```
